@@ -280,7 +280,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0.7490196, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.13725491, g: 0.47450984, b: 0.3254902, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -374,7 +374,7 @@ Transform:
   m_GameObject: {fileID: 972889608}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 734.5, y: 259.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -438,7 +438,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0b359a377b3b8ac4bafba387588a86ea, type: 3}
     m_FontSize: 75
     m_FontStyle: 0
     m_BestFit: 0
