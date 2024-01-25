@@ -11,6 +11,9 @@ public class TitleScreen : MonoBehaviour
 
     public GameObject CreditsScreen;
 
+    public GameObject SoundScreen;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +51,15 @@ public class TitleScreen : MonoBehaviour
         CreditsScreen.SetActive(false);
     }
 
+    public void OpenSound()
+    {
+        SoundScreen.SetActive(true);
+    }
+
+    public void CloseSound()
+    {
+        SoundScreen.SetActive(false);
+    }
     public void QuitGame()
     {
         Application.Quit();
