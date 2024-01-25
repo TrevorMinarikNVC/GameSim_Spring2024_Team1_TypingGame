@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    public Animator animator;
+
     public Collider2D hitBox;
 
     private GameObject attackArea = default;
@@ -44,6 +46,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Attack()
     {
+        animator.SetTrigger("PencilAttack");
         attacking = true;
         hitBox.enabled = true;
     }
