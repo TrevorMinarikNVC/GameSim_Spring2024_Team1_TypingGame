@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 1293279283}
   - component: {fileID: 1293279285}
   m_Layer: 0
-  m_Name: HitBox_temp
+  m_Name: attackArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
