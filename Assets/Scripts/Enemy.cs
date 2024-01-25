@@ -5,6 +5,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 
 {
+    public Animator animator;
+
     [Header("Movement")]
 
     public float speed = 3f;
@@ -23,6 +25,7 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         health = maxHealth;
+        //animator.set
     }
 
     public void TakeDamage(float dmg)
