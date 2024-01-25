@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    private float health = 0f;
-    [SerializeField] private float maxHealth = 100f;
+    public float health = 0f;
+    [SerializeField] public float maxHealth = 100f;
 
 private void Start() //Game starts with max Health
 {
