@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    public Collider2D hitBox;
+
     private GameObject attackArea = default;
-    [SerializeField] private float attackDamage = 10f;
+    [SerializeField] public float attackDamage = 10f;
     private bool attacking = false;
     private float timeToAttack = 0.25f;
     private float timer = 0f;
@@ -15,7 +18,7 @@ public class PlayerAttack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        attackArea = transform.GetChild(0).gameObject;
+        attacking = false;
 
     }
 
@@ -34,7 +37,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 timer = 0;
                 attacking = false;
-                attackArea.SetActive(attacking);
+                hitBox.enabled = false;
             }
         }
     }
@@ -42,7 +45,25 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         attacking = true;
-        attackArea.SetActive(attacking);
+        hitBox.enabled = true;
+    }
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.gameObject.tag == "Enemy")
+    //    {
+    //        Enemy enemy = other.gameObject.GetComponent<Enemy>();
+    //        enemy.TakeDamage(attackDamage);
+    //    }
+    //}
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Enemy")
+        {
+            Debug.Log("enemy Attacked");
+            Enemy enemy = other.gameObject.GetComponent<Enemy>();
+            enemy.TakeDamage(attackDamage);
+        }
     }
 }
 
