@@ -45,3 +45,4 @@ public class PlayerAttack : MonoBehaviour
         attackArea.SetActive(attacking);
     }
 }
+
