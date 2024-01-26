@@ -13,6 +13,8 @@ public class Enemy : MonoBehaviour
     public Animator PlayerAnim;
     public AudioSource playerHurt;
 
+    public EnemyTracker enemyTracker;
+
     [Header("Movement")]
 
     public float speed = 3f;
@@ -40,6 +42,8 @@ public class Enemy : MonoBehaviour
         
         if (health <= 0)
         {
+            if (enemyTracker != null)
+                enemyTracker.GetComponent<EnemyTracker>().decreaseCount();
             Destroy(gameObject);
         }
     }
