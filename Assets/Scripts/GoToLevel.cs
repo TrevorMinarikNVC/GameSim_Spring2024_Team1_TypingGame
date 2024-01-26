@@ -11,4 +11,9 @@ public class GoToLevel : MonoBehaviour
         SceneManager.LoadScene(buildNum);
     }
 
+    public void loadTheNextLevel()
+    {
+        int buildNum = SceneManager.GetActiveScene().buildIndex + 1;
+        SceneManager.LoadScene(buildNum);
+    }
 }

@@ -15,7 +15,7 @@ using UnityEngine.SceneManagement;
 public class WordBank1 : MonoBehaviour
 {
 
-    public string secondLevel;
+    public string secondLevel = "TitleScreen";
 
     public GameObject contButton;
 
