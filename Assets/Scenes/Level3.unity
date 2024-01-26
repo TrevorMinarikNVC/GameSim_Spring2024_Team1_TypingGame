@@ -275,7 +275,7 @@ Transform:
   m_GameObject: {fileID: 11147016}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -60.318, y: 0.022227, z: 49.2}
+  m_LocalPosition: {x: -60.318, y: 0.022227, z: 1.7}
   m_LocalScale: {x: 6.6458883, y: 65.65539, z: 6.6458883}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -621,11 +621,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5199098367424212034, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.33
+      value: 10.14
       objectReference: {fileID: 0}
     - target: {fileID: 5199098367424212034, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.32
+      value: 8.45
       objectReference: {fileID: 0}
     - target: {fileID: 5199098367424212034, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2668,7 +2668,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
