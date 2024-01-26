@@ -9,6 +9,9 @@ public class Enemy : MonoBehaviour
     public AudioSource walkSfx;
 
     public Animator animator;
+    
+    public Animator PlayerAnim;
+    public AudioSource playerHurt;
 
     public EnemyTracker enemyTracker;
 
@@ -27,12 +30,12 @@ public class Enemy : MonoBehaviour
     private float health;
     [SerializeField] private float maxHealth;
 
-    private void Start()
+    private void Start() //Enemy spawn at Max health
     {
         health = maxHealth;
     }
 
-    public void TakeDamage(float dmg)
+    public void TakeDamage(float dmg) //Enemy taking Damage
     {
         health -= dmg;
         Debug.Log("Enemy Health: " + health);
@@ -60,14 +63,17 @@ public class Enemy : MonoBehaviour
     {
         animator.SetBool("Walk", false);
         walkSfx.Stop();
-        animator.SetTrigger("Attack");
-        AttackSfx.Play();
+        
+        
         if (other.gameObject.tag == "Player")
         {
             if (attackSpeed <= canAttack) //Able to attack
             {
                 animator.SetTrigger("Attack");
+                AttackSfx.Play();
                 other.gameObject.GetComponent<PlayerHealth>().UpdateHealth(-attackDamage);
+                playerHurt.Play();
+                PlayerAnim.SetTrigger("Hurt");
                 canAttack = 0f; //set attack on cooldown 
             }
             else 
