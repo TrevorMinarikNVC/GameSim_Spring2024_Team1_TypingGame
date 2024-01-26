@@ -20,6 +20,8 @@ public class Typerhi : MonoBehaviour
 
     public AudioSource noise;
 
+   
+
     [Tooltip("List of words to be typed by the player")]
     public WordBank1 wordBank1 = null;
     [Tooltip("Shows the remaining letters in the word that the player is typing")]
