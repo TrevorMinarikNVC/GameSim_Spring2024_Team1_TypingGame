@@ -12,20 +12,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WordBank1 : MonoBehaviour
+public class WordBank2 : MonoBehaviour
 {
 
     public AudioSource yay;
 
-    public string secondLevel;
+    public string thirdLevel;
 
     public GameObject contButton;
 
     private List<string> originalWords = new List<string>()
     {
-        "apple",
-        "ape",
-        "animal"
+        "because",
+        "babbles",
+        "babbitt"
     };
 
     private List<string> workingWords = new List<string>();
@@ -87,6 +87,6 @@ public class WordBank1 : MonoBehaviour
 
     public void NextLevel()
     {
-        SceneManager.LoadScene(secondLevel);
+        SceneManager.LoadScene(thirdLevel);
     }
 }
