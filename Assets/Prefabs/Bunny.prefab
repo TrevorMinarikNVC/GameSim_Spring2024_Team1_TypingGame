@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4362171784163929644}
   - component: {fileID: 1540965038901741599}
   - component: {fileID: 3139211052883529538}
-  - component: {fileID: 3759164574058027791}
+  - component: {fileID: 5773309078325869573}
   - component: {fileID: 7501024740309951042}
   - component: {fileID: 4253547820812502387}
   m_Layer: 6
@@ -113,8 +113,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!61 &3759164574058027791
-BoxCollider2D:
+--- !u!70 &5773309078325869573
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -145,19 +145,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.16809487, y: -0.11595738}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.948571, y: 6.737083}
-    newSize: {x: 6.948571, y: 6.737083}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.9404297, y: 4.035679}
-  m_EdgeRadius: 0
+  m_Offset: {x: -0.09278834, y: -0.06470227}
+  m_Size: {x: 3.1319973, y: 4.1684375}
+  m_Direction: 0
 --- !u!58 &7501024740309951042
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -644,7 +634,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f26083f118931214eb571d10aff2e11f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.665
+  m_Volume: 0.545
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -66,7 +66,7 @@ public class Enemy : MonoBehaviour
         if (target != null)
         {
             float step = speed * Time.deltaTime;
-            walkSfx.Play();
+            
             animator.SetBool("Walk", true);
             transform.position = Vector2.MoveTowards(transform.position, target.position, step);
         }
@@ -75,7 +75,7 @@ public class Enemy : MonoBehaviour
     private void OnCollisionStay2D(Collision2D other) //Attack player
     {
         animator.SetBool("Walk", false);
-        walkSfx.Stop();
+        
         
         
         if (other.gameObject.tag == "Player")
