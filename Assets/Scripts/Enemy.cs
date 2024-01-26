@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
 {
     public AudioSource AttackSfx;
     public AudioSource walkSfx;
+    public AudioSource Harmed;
 
     public Animator animator;
     
@@ -38,6 +39,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float dmg) //Enemy taking Damage
     {
         health -= dmg;
+        Harmed.Play();
         Debug.Log("Enemy Health: " + health);
         
         if (health <= 0)
