@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public AudioSource JuiceSlurp;
     public float health = 0f;
     [SerializeField] public float maxHealth = 100f;
 
@@ -17,6 +18,7 @@ private void Start() //Game starts with max Health
 
         if (health > maxHealth) //caping at max health
         {
+            JuiceSlurp.Play();
             health = maxHealth;
         }
         else if (health <= 0f) //Player dies and needs to respawn

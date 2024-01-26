@@ -9,9 +9,7 @@ public class Healing : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            JuiceSlurp.Play();
             other.gameObject.GetComponent<PlayerHealth>().UpdateHealth(100f);
-            Invoke("MyFunction", 2);
             Destroy(gameObject);
         }
     }

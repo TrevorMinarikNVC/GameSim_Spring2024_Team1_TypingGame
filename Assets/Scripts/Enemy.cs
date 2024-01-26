@@ -55,6 +55,7 @@ public class Enemy : MonoBehaviour
     private void OnCollisionStay2D(Collision2D other) //Attack player
     {
         animator.SetBool("Walk", false);
+        walkSfx.Stop();
         animator.SetTrigger("Attack");
         AttackSfx.Play();
         if (other.gameObject.tag == "Player")
@@ -85,6 +86,7 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            walkSfx.Stop();
             animator.SetBool("Walk", false);
             target = null;
         }
