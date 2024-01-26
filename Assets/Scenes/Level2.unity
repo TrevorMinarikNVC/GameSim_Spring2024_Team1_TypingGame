@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -304,6 +304,10 @@ PrefabInstance:
       propertyPath: PlayerAnim
       value: 
       objectReference: {fileID: 1190101088}
+    - target: {fileID: 4253547820812502387, guid: fbb0f61de25947f46afbf9e3f5e1471e, type: 3}
+      propertyPath: enemyTracker
+      value: 
+      objectReference: {fileID: 1738328114}
     - target: {fileID: 4362171784163929644, guid: fbb0f61de25947f46afbf9e3f5e1471e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.1
@@ -593,6 +597,10 @@ PrefabInstance:
       propertyPath: attackDamage
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
+      propertyPath: enemyTracker
+      value: 
+      objectReference: {fileID: 1738328114}
     - target: {fileID: 1668098822426450032, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: m_Name
       value: AppleWorm (4)
@@ -723,6 +731,10 @@ PrefabInstance:
       propertyPath: PlayerAnim
       value: 
       objectReference: {fileID: 1190101088}
+    - target: {fileID: 4253547820812502387, guid: fbb0f61de25947f46afbf9e3f5e1471e, type: 3}
+      propertyPath: enemyTracker
+      value: 
+      objectReference: {fileID: 1738328114}
     - target: {fileID: 4362171784163929644, guid: fbb0f61de25947f46afbf9e3f5e1471e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20
@@ -1208,6 +1220,10 @@ PrefabInstance:
       propertyPath: attackDamage
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
+      propertyPath: enemyTracker
+      value: 
+      objectReference: {fileID: 1738328114}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1646,6 +1662,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 391772957493096413, guid: 8125f8198875edb4f8089131e6092c51, type: 3}
   m_PrefabInstance: {fileID: 673056495}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &680846670
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 395288798934786183, guid: 1e1ae37b85a8d3a4fbb005634d0de399, type: 3}
+      propertyPath: m_Name
+      value: LevelChanger
+      objectReference: {fileID: 0}
+    - target: {fileID: 674541097762629332, guid: 1e1ae37b85a8d3a4fbb005634d0de399, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.6153984
+      objectReference: {fileID: 0}
+    - target: {fileID: 674541097762629332, guid: 1e1ae37b85a8d3a4fbb005634d0de399, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.6291008
+      objectReference: {fileID: 0}
+    - target: {fileID: 674541097762629332, guid: 1e1ae37b85a8d3a4fbb005634d0de399, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.8183746
+      objectReference: {fileID: 0}
+    - target: {fileID: 674541097762629332, guid: 1e1ae37b85a8d3a4fbb005634d0de399, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 674541097762629332, guid: 1e1ae37b85a8d3a4fbb005634d0de399, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 674541097762629332, guid: 1e1ae37b85a8d3a4fbb005634d0de399, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 674541097762629332, guid: 1e1ae37b85a8d3a4fbb005634d0de399, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 674541097762629332, guid: 1e1ae37b85a8d3a4fbb005634d0de399, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 674541097762629332, guid: 1e1ae37b85a8d3a4fbb005634d0de399, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 674541097762629332, guid: 1e1ae37b85a8d3a4fbb005634d0de399, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1e1ae37b85a8d3a4fbb005634d0de399, type: 3}
 --- !u!1001 &721579324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1730,6 +1803,10 @@ PrefabInstance:
       propertyPath: attackDamage
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
+      propertyPath: enemyTracker
+      value: 
+      objectReference: {fileID: 1738328114}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1893,6 +1970,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 11147020}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &733406446 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1285880798498894241, guid: 1e1ae37b85a8d3a4fbb005634d0de399, type: 3}
+  m_PrefabInstance: {fileID: 680846670}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2680b2d0f414ef546a1cb5951cae6768, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &945011342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1977,6 +2065,10 @@ PrefabInstance:
       propertyPath: attackDamage
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
+      propertyPath: enemyTracker
+      value: 
+      objectReference: {fileID: 1738328114}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2006,6 +2098,10 @@ PrefabInstance:
       propertyPath: attackDamage
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
+      propertyPath: enemyTracker
+      value: 
+      objectReference: {fileID: 1738328114}
     - target: {fileID: 1668098822426450032, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: m_Name
       value: AppleWorm (1)
@@ -2355,6 +2451,10 @@ PrefabInstance:
       propertyPath: attackDamage
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
+      propertyPath: enemyTracker
+      value: 
+      objectReference: {fileID: 1738328114}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2396,6 +2496,10 @@ PrefabInstance:
       propertyPath: PlayerAnim
       value: 
       objectReference: {fileID: 1190101088}
+    - target: {fileID: 4253547820812502387, guid: fbb0f61de25947f46afbf9e3f5e1471e, type: 3}
+      propertyPath: enemyTracker
+      value: 
+      objectReference: {fileID: 1738328114}
     - target: {fileID: 4362171784163929644, guid: fbb0f61de25947f46afbf9e3f5e1471e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.26
@@ -2752,11 +2856,26 @@ PrefabInstance:
       propertyPath: attackDamage
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
+      propertyPath: enemyTracker
+      value: 
+      objectReference: {fileID: 1738328114}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
+--- !u!114 &1738328114 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4787075966105171639, guid: 4692af59910639c4aa21086598e053e7, type: 3}
+  m_PrefabInstance: {fileID: 1767729113}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1f1e06bbe9108a479360fb554a551ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1748911947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2841,6 +2960,10 @@ PrefabInstance:
       propertyPath: attackDamage
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
+      propertyPath: enemyTracker
+      value: 
+      objectReference: {fileID: 1738328114}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2898,6 +3021,10 @@ PrefabInstance:
       propertyPath: enemyCount
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 4787075966105171639, guid: 4692af59910639c4aa21086598e053e7, type: 3}
+      propertyPath: levelChanger
+      value: 
+      objectReference: {fileID: 733406446}
     - target: {fileID: 8965609102083022261, guid: 4692af59910639c4aa21086598e053e7, type: 3}
       propertyPath: m_Name
       value: EnemyTracker
@@ -2985,6 +3112,10 @@ PrefabInstance:
       propertyPath: PlayerAnim
       value: 
       objectReference: {fileID: 1190101088}
+    - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
+      propertyPath: enemyTracker
+      value: 
+      objectReference: {fileID: 1738328114}
     - target: {fileID: 1668098822426450032, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: m_Name
       value: AppleWorm
@@ -3058,6 +3189,10 @@ PrefabInstance:
       propertyPath: attackDamage
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
+      propertyPath: enemyTracker
+      value: 
+      objectReference: {fileID: 1738328114}
     - target: {fileID: 1668098822426450032, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: m_Name
       value: AppleWorm (5)
@@ -3225,6 +3360,10 @@ PrefabInstance:
       propertyPath: PlayerAnim
       value: 
       objectReference: {fileID: 1190101088}
+    - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
+      propertyPath: enemyTracker
+      value: 
+      objectReference: {fileID: 1738328114}
     - target: {fileID: 993029850374575106, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: m_Radius
       value: 26
@@ -3302,6 +3441,10 @@ PrefabInstance:
       propertyPath: attackDamage
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
+      propertyPath: enemyTracker
+      value: 
+      objectReference: {fileID: 1738328114}
     - target: {fileID: 1668098822426450032, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: m_Name
       value: AppleWorm (3)
@@ -3552,3 +3695,4 @@ SceneRoots:
   - {fileID: 167516187}
   - {fileID: 1808978550}
   - {fileID: 1767729113}
+  - {fileID: 680846670}
