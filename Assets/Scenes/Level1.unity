@@ -1883,6 +1883,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4787075966105171639, guid: 4692af59910639c4aa21086598e053e7, type: 3}
+      propertyPath: enemyCount
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8965609102083022261, guid: 4692af59910639c4aa21086598e053e7, type: 3}
       propertyPath: m_Name
       value: EnemyTracker

@@ -17,4 +17,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TyperLVL1.unity
     guid: e95795c2bd4362d4fbc4519ed97f2d2c
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 587e7d426c348e5408c6bae7cfb824dd
+  - enabled: 1
+    path: Assets/Scenes/TyperLVL2.unity
+    guid: b56ff1f0e89c3c44d8ddf117d1e4a8cf
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 5eb11988c9ebf1747828111f10da1aaf
+  - enabled: 1
+    path: Assets/Scenes/TyperLVL3.unity
+    guid: b0362df8d5e4dc24da969b69ef4872ae
+  - enabled: 1
+    path: Assets/Scenes/LoseScene.unity
+    guid: c28eb9f63c174ef41a424b1eb09b74b0
   m_configObjects: {}
