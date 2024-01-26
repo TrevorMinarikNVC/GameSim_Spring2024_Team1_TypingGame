@@ -15,15 +15,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Typerhi : MonoBehaviour
+public class Typer3 : MonoBehaviour
 {
 
     public AudioSource noise;
 
-   
+
 
     [Tooltip("List of words to be typed by the player")]
-    public WordBank1 wordBank1 = null;
+    public WordBank2 wordBank2 = null;
     [Tooltip("Shows the remaining letters in the word that the player is typing")]
     public Text wordOutput = null;
 
@@ -38,7 +38,7 @@ public class Typerhi : MonoBehaviour
 
     private void SetCurrentWord()
     {
-        currentWord = wordBank1.GetWord();
+        currentWord = wordBank2.GetWord();
         SetRemainingWord(currentWord);
     }
 
@@ -62,7 +62,7 @@ public class Typerhi : MonoBehaviour
         {
 
             noise.Play();
-            
+
             // Get keys pressed down on current frame as a string
             string keysPressed = Input.inputString;
 
