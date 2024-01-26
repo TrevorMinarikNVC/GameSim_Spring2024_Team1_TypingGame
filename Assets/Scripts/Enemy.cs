@@ -41,13 +41,24 @@ public class Enemy : MonoBehaviour
         health -= dmg;
         Harmed.Play();
         Debug.Log("Enemy Health: " + health);
-        
+        //Change the color to red
+        this.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+        //Change the color back to normal
+        StartCoroutine(ResetColor());
+
         if (health <= 0)
         {
             if (enemyTracker != null)
                 enemyTracker.GetComponent<EnemyTracker>().decreaseCount();
             Destroy(gameObject);
         }
+    }
+
+    private IEnumerator ResetColor()
+    {
+        //Wait for about a tenth of a second, then change the color back to white
+        yield return new WaitForSeconds(.1f);
+        this.GetComponent<Renderer>().material.SetColor("_Color", Color.white);
     }
 
     private void Update() // Move towards player
