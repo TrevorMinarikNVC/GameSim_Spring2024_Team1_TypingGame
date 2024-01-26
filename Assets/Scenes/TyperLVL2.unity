@@ -293,6 +293,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1197390698359271175, guid: 3bdf8314fe844e54b87ccecef834881d, type: 3}
+      propertyPath: contButton
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2129671760053665799, guid: 3bdf8314fe844e54b87ccecef834881d, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -318,7 +322,8 @@ PrefabInstance:
       value: WordBank2, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2278134753407302374, guid: 3bdf8314fe844e54b87ccecef834881d, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 512967544694131219, guid: 3bdf8314fe844e54b87ccecef834881d, type: 3}
       insertIndex: -1
@@ -360,8 +365,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yay: {fileID: 1457052678}
-  thirdLevel: 
-  contButton: {fileID: 680149068}
+  thirdLevel: TitleScreen
+  contButton: {fileID: 0}
 --- !u!4 &395922229
 Transform:
   m_ObjectHideFlags: 0
@@ -438,11 +443,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 491f3004e5d413a40bd0d37b2b4a099e, type: 3}
---- !u!1 &680149068 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2278134753407302374, guid: 3bdf8314fe844e54b87ccecef834881d, type: 3}
-  m_PrefabInstance: {fileID: 256162282}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &732730873
 GameObject:
   m_ObjectHideFlags: 0
