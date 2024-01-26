@@ -20,7 +20,7 @@ public class EnemyTracker : MonoBehaviour
     [Tooltip("Object for transitioning levels")]
     public GoToLevel levelChanger;
 
-    private void decreaseCount()
+    public void decreaseCount()
     {
         enemyCount--;
     }
