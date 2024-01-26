@@ -42,3 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: TopLayer
+    uniqueID: 3562098693
+    locked: 0
+  - name: Enemies
+    uniqueID: 4161187453
+    locked: 0

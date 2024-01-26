@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4362171784163929644}
   - component: {fileID: 1540965038901741599}
   - component: {fileID: 3139211052883529538}
-  - component: {fileID: 8915168969041304253}
+  - component: {fileID: 3759164574058027791}
   - component: {fileID: 7501024740309951042}
   - component: {fileID: 4253547820812502387}
   m_Layer: 6
@@ -112,8 +112,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!58 &8915168969041304253
-CircleCollider2D:
+--- !u!61 &3759164574058027791
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -144,9 +144,19 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.16809487, y: -0.11595738}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.948571, y: 6.737083}
+    newSize: {x: 6.948571, y: 6.737083}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.8
+  m_Size: {x: 2.9404297, y: 4.035679}
+  m_EdgeRadius: 0
 --- !u!58 &7501024740309951042
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -199,7 +209,7 @@ MonoBehaviour:
   animator: {fileID: 3139211052883529538}
   PlayerAnim: {fileID: 0}
   playerHurt: {fileID: 5843399862730764075}
-  speed: 7.6
+  speed: 5
   attackDamage: 10
   attackSpeed: 1
   maxHealth: 100
@@ -246,7 +256,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ed20e468ee6ea7a4f878cb7821f35d43, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
