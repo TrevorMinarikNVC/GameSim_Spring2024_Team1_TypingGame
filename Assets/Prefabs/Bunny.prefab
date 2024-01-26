@@ -196,7 +196,7 @@ MonoBehaviour:
   AttackSfx: {fileID: 4084712573038870333}
   walkSfx: {fileID: 5999623584988396585}
   animator: {fileID: 3139211052883529538}
-  speed: 10
+  speed: 7.6
   attackDamage: 10
   attackSpeed: 1
   maxHealth: 100

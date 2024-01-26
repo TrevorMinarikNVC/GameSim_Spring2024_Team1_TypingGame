@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    public AudioSource pencilSfx;
+
     public Animator animator;
 
     public Collider2D hitBox;
@@ -47,6 +49,7 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         animator.SetTrigger("PencilAttack");
+        pencilSfx.Play();
         attacking = true;
         hitBox.enabled = true;
     }
