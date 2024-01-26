@@ -61,8 +61,6 @@ public class Typerhi : MonoBehaviour
         if (Input.anyKeyDown)
         {
 
-            noise.Play();
-            
             // Get keys pressed down on current frame as a string
             string keysPressed = Input.inputString;
 
@@ -99,6 +97,7 @@ public class Typerhi : MonoBehaviour
     private void RemoveLetter()
     {
         // Remove the first letter in the remaining word
+        noise.Play();
         string newString = remainingWord.Remove(0, 1);
         SetRemainingWord(newString);
     }
