@@ -38,6 +38,13 @@ public class WordBank1 : MonoBehaviour
     private void ReloadWords()
     {
         workingWords.AddRange(originalWords);
+
+        //1 in 100 chance to spell extra word
+        if (Random.Range(0, 100) == 0)
+        {
+            workingWords.Add("antidisestablishmentarianism");
+        }
+
         Shuffle(workingWords);
         ConvertToLower(workingWords);
     }
