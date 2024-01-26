@@ -25,7 +25,6 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         health = maxHealth;
-        //animator.set
     }
 
     public void TakeDamage(float dmg)
@@ -44,16 +43,20 @@ public class Enemy : MonoBehaviour
         if (target != null)
         {
             float step = speed * Time.deltaTime;
+            animator.SetBool("Walk", true);
             transform.position = Vector2.MoveTowards(transform.position, target.position, step);
         }
     }
 
     private void OnCollisionStay2D(Collision2D other) //Attack player
     {
-        if(other.gameObject.tag == "Player")
+        animator.SetBool("Walk", false);
+        animator.SetTrigger("Attack");
+        if (other.gameObject.tag == "Player")
         {
             if (attackSpeed <= canAttack) //Able to attack
             {
+                animator.SetTrigger("Attack");
                 other.gameObject.GetComponent<PlayerHealth>().UpdateHealth(-attackDamage);
                 canAttack = 0f; //set attack on cooldown 
             }
@@ -77,6 +80,7 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            animator.SetBool("Walk", false);
             target = null;
         }
     }
