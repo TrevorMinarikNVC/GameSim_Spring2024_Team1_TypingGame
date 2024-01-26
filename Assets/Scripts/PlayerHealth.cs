@@ -1,3 +1,5 @@
+// Last edited by Trevor Minarik (loading the loss screen upon death)
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public AudioSource JuiceSlurp;
     public float health = 0f;
     [SerializeField] public float maxHealth = 100f;
+    public GoToLevel levelChanger;
 
 private void Start() //Game starts with max Health
 {
@@ -26,6 +29,7 @@ private void Start() //Game starts with max Health
         {
             health = 0f;
             Destroy(gameObject);
+            levelChanger.GetComponent<GoToLevel>().loadTheLevel(7);
             Debug.Log("Player Respawn");  
             
         }

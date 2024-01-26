@@ -1,3 +1,5 @@
+// Last edited by Trevor Minarik (flashing red upon damage)
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
