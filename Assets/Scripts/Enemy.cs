@@ -5,6 +5,9 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 
 {
+    public AudioSource AttackSfx;
+    public AudioSource walkSfx;
+
     public Animator animator;
 
     [Header("Movement")]
@@ -43,6 +46,7 @@ public class Enemy : MonoBehaviour
         if (target != null)
         {
             float step = speed * Time.deltaTime;
+            walkSfx.Play();
             animator.SetBool("Walk", true);
             transform.position = Vector2.MoveTowards(transform.position, target.position, step);
         }
@@ -52,6 +56,7 @@ public class Enemy : MonoBehaviour
     {
         animator.SetBool("Walk", false);
         animator.SetTrigger("Attack");
+        AttackSfx.Play();
         if (other.gameObject.tag == "Player")
         {
             if (attackSpeed <= canAttack) //Able to attack
