@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -304,6 +304,10 @@ PrefabInstance:
       propertyPath: PlayerAnim
       value: 
       objectReference: {fileID: 1190101088}
+    - target: {fileID: 4253547820812502387, guid: fbb0f61de25947f46afbf9e3f5e1471e, type: 3}
+      propertyPath: attackSpeed
+      value: 0.66
+      objectReference: {fileID: 0}
     - target: {fileID: 4253547820812502387, guid: fbb0f61de25947f46afbf9e3f5e1471e, type: 3}
       propertyPath: enemyTracker
       value: 
@@ -594,8 +598,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1190101088}
     - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
+      propertyPath: attackSpeed
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: attackDamage
-      value: 30
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: enemyTracker
@@ -729,7 +737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4253547820812502387, guid: fbb0f61de25947f46afbf9e3f5e1471e, type: 3}
       propertyPath: speed
-      value: 0.7
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 4253547820812502387, guid: fbb0f61de25947f46afbf9e3f5e1471e, type: 3}
       propertyPath: maxHealth
@@ -739,6 +747,10 @@ PrefabInstance:
       propertyPath: PlayerAnim
       value: 
       objectReference: {fileID: 1190101088}
+    - target: {fileID: 4253547820812502387, guid: fbb0f61de25947f46afbf9e3f5e1471e, type: 3}
+      propertyPath: attackSpeed
+      value: 0.46
+      objectReference: {fileID: 0}
     - target: {fileID: 4253547820812502387, guid: fbb0f61de25947f46afbf9e3f5e1471e, type: 3}
       propertyPath: enemyTracker
       value: 
@@ -1096,8 +1108,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1190101088}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
+      propertyPath: attackSpeed
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: attackDamage
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: enemyTracker
@@ -1433,7 +1449,7 @@ PrefabInstance:
       objectReference: {fileID: 1190101088}
     - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: attackSpeed
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: enemyTracker
@@ -1698,6 +1714,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1190101088}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
+      propertyPath: attackSpeed
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: attackDamage
       value: 1
       objectReference: {fileID: 0}
@@ -1957,7 +1977,7 @@ PrefabInstance:
       objectReference: {fileID: 1190101088}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: attackSpeed
-      value: 3
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: attackDamage
@@ -1993,8 +2013,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1190101088}
     - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
+      propertyPath: attackSpeed
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: attackDamage
-      value: 30
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: enemyTracker
@@ -2427,6 +2451,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1190101088}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
+      propertyPath: attackSpeed
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: attackDamage
       value: 15
       objectReference: {fileID: 0}
@@ -2475,6 +2503,10 @@ PrefabInstance:
       propertyPath: PlayerAnim
       value: 
       objectReference: {fileID: 1190101088}
+    - target: {fileID: 4253547820812502387, guid: fbb0f61de25947f46afbf9e3f5e1471e, type: 3}
+      propertyPath: attackSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4253547820812502387, guid: fbb0f61de25947f46afbf9e3f5e1471e, type: 3}
       propertyPath: enemyTracker
       value: 
@@ -2960,8 +2992,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1190101088}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
+      propertyPath: attackSpeed
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: attackDamage
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: enemyTracker
@@ -3063,6 +3099,10 @@ PrefabInstance:
       propertyPath: PlayerAnim
       value: 
       objectReference: {fileID: 1190101088}
+    - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
+      propertyPath: attackSpeed
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: attackDamage
       value: 15
@@ -3220,6 +3260,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1190101088}
     - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
+      propertyPath: attackSpeed
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: enemyTracker
       value: 
       objectReference: {fileID: 1738328114}
@@ -3293,8 +3337,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1190101088}
     - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
+      propertyPath: attackSpeed
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: attackDamage
-      value: 30
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: enemyTracker
@@ -3472,6 +3520,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1190101088}
     - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
+      propertyPath: attackSpeed
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: enemyTracker
       value: 
       objectReference: {fileID: 1738328114}
@@ -3549,8 +3601,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1190101088}
     - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
+      propertyPath: attackSpeed
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: attackDamage
-      value: 30
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 458849138827933180, guid: 2e0194168e3626948ae8a4c97bed3bb9, type: 3}
       propertyPath: enemyTracker
