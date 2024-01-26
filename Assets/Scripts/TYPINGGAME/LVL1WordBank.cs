@@ -15,7 +15,9 @@ using UnityEngine.SceneManagement;
 public class WordBank1 : MonoBehaviour
 {
 
-    public string secondLevel = "TitleScreen";
+    public AudioSource yay;
+
+    public string secondLevel;
 
     public GameObject contButton;
 
@@ -74,7 +76,10 @@ public class WordBank1 : MonoBehaviour
         // If the list of remaining words is empty...
         else
         {
+
             contButton.SetActive(true);
+
+            yay.Play();
         }
 
         return newWord;
