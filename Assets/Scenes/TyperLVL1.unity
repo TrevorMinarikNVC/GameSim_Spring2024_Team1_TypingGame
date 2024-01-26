@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yay: {fileID: 1705922540}
-  secondLevel: 
+  secondLevel: Level2
   contButton: {fileID: 1348681562}
 --- !u!1 &1040786770
 GameObject:
@@ -818,7 +818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3506512070644486280, guid: 1321a332a28b85c48a56b518aabced30, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3506512070644486280, guid: 1321a332a28b85c48a56b518aabced30, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -827,7 +827,7 @@ PrefabInstance:
     - target: {fileID: 3506512070644486280, guid: 1321a332a28b85c48a56b518aabced30, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1348681563}
+      objectReference: {fileID: 910469597}
     - target: {fileID: 3506512070644486280, guid: 1321a332a28b85c48a56b518aabced30, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -842,7 +842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3506512070644486280, guid: 1321a332a28b85c48a56b518aabced30, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: loadTheLevel
+      value: NextLevel
       objectReference: {fileID: 0}
     - target: {fileID: 3506512070644486280, guid: 1321a332a28b85c48a56b518aabced30, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -850,7 +850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3506512070644486280, guid: 1321a332a28b85c48a56b518aabced30, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GoToLevel, Assembly-CSharp
+      value: WordBank1, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3506512070644486280, guid: 1321a332a28b85c48a56b518aabced30, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
