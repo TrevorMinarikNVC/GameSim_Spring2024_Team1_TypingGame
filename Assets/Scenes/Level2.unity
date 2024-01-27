@@ -1097,7 +1097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: speed
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: maxHealth
@@ -1703,7 +1703,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: speed
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: maxHealth
@@ -2440,7 +2440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: speed
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: maxHealth
@@ -2981,11 +2981,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: speed
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: maxHealth
-      value: 150
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: PlayerAnim
@@ -3089,11 +3089,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: speed
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: maxHealth
-      value: 300
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 8228069378176598223, guid: eb85b81b67fb8ee429e79cf0d148186c, type: 3}
       propertyPath: PlayerAnim
